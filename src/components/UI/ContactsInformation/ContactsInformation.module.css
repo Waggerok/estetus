@@ -1,0 +1,19 @@
+:root {
+    --title_color: #000;
+    --description_color: #ff7b00;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info__title {
+    font-size: 26px;
+    color: var(--title_color);
+}
+
+.info__description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--description_color);
+}

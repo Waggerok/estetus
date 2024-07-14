@@ -96,7 +96,7 @@ body
             width: 100%
             height: 100%
             content: ''
-            background-color: rgba(0, 0, 0, .4)
+            background-color: rgba(0, 0, 0, .6)
         &-video
             position: absolute
             top: 50%
@@ -125,8 +125,43 @@ body
                 font-size: 36px
                 color: white
             &-cards
-                margin-top: 50px
+                margin-top: 20px
+                gap: 50px
                 display: flex
                 justify-content: space-between
                 align-items: center
+
+.contacts
+    &__title
+        font-size: 40px
+        margin-bottom: 20px
+        color: $text-color-navbar
+        text-align: center
+    &__info
+        display: flex
+        justify-content: space-around
+        &_connections
+            &_telephone
+                margin-top: 20px
+                &-title
+                    font-size: 26px
+                    color: $text-color-navbar
+                &-description
+                    margin-top: 10px
+                    a
+                        font-size: 16px
+                        color: $main-color
+                        text-decoration: none
+            &_links
+                margin-top: 20px
+                &-title
+                    font-size: 26px
+                    color: $text-color-navbar
+                &-description
+                    margin-top: 10px
+                    a
+                        text-decoration: none
+                        color: $main-color
+        
+
                 
