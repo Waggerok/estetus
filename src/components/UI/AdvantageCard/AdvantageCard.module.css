@@ -1,0 +1,32 @@
+.advantages__cards_item{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;  
+    transition: 1s all;
+    color: rgb(121, 121, 121);
+}
+
+.advantages__cards_item:hover {
+    color: #ff7b00;
+}
+
+.advantages__cards_item_title{
+    margin-top: 16px;
+    font-size: 20px;
+    text-align: center;
+    white-space: pre-line;
+    text-align: left;
+    color: white;
+
+}
+
+.advantages__cards_item_descriprion {
+    padding-top: 10px;
+    text-align: start;
+    width: 250px;
+    color: black;
+}
