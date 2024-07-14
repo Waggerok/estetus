@@ -1,0 +1,74 @@
+@import 'AppVariables.sass'
+// @import 'appAnimations.sass'
+
+body
+    box-sizing: border-box
+
+#root
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: white
+
+.App
+    width: 1200px
+
+.navbar
+    display: flex
+    align-items: center
+    height: 70px
+    width: 100vw
+    padding: 0 20px
+    background-color: #f1f1f1
+    border-bottom: 1px solid $main-color
+    &__logo
+        text-decoration: none
+        color: $main-color
+        font-size: 30px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        gap: 10px
+        font-weight: 500
+        transition: 0.5s all
+        margin-left: 50px
+        img
+            width: 50px
+            height: 50px
+            transition: 1s all
+        &:hover
+            transition: 0.5 all
+            text-shadow: 0.5px 0.5px 5px $main-color
+            img
+                transition: 1s all
+                transform: rotateZ(180deg)
+    &__links
+        display: flex
+        align-items: center
+        margin-left: auto
+        margin-right: auto
+        ul
+            margin: 0
+            margin-right: 140px
+            list-style-type: none
+            li
+                display: inline-block
+                margin-right: 50px
+        &_item
+            text-decoration: none
+            color: $text-color-navbar
+            font-size: 16px
+            transition: 1s all
+            &::after
+                margin-top: 1px
+                transition: 0.5s all
+                content: ''
+                display: block
+                width: 0
+                height: 2px
+                background-color: $main-color
+            &:hover
+                color: $main-color
+                transition: 1s all
+                &::after
+                    width: 100%    
