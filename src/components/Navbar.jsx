@@ -18,7 +18,7 @@ const Navbar = () => {
                         <Link className='navbar__links_item' to='/contacts'>Цены</Link>
                     </li>  
                     <li>
-                        <Link className='navbar__links_item' to='/examples'>Фото работ</Link>
+                        <Link className='navbar__links_item' to='/examples'>Портфолио</Link>
                     </li>
                     <li>
                         <Link className='navbar__links_item' to='/contacts'>Контакты</Link>
