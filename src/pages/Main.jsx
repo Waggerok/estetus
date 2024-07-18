@@ -31,19 +31,19 @@ const Main = () => {
                                 <AdvantageCard
                                     title='БЕСПЛАТНАЯ ДОСТАВКА' 
                                     title2=''
-                                    description=''
+                                    description='Курьером по москве'
                                     image={<IoMdCart size={80} />}                                
                                 />   
                                 <AdvantageCard 
                                     title='ОТЛОЖЕННЫЙ ПЛАТЕЖ'
                                     title2=''
-                                    description=''
+                                    description='безопасная двухэтапная оплата'
                                     image={<IoIosTime size={80} />}
                                 />
                                 <AdvantageCard 
                                     title='СКИДКИ'
                                     title2='ДЛЯ ПОСТОЯННЫХ КЛИЕНТОВ'
-                                    description=''
+                                    description='по нашей бонусной программе'
                                     image={<BiSolidDiscount size={80}/>}
                                 />                            
                             </div>

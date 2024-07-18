@@ -15,14 +15,14 @@ const Navbar = () => {
                         <Link className='navbar__links_item' to='/services'>Услуги</Link>
                     </li>
                     <li>
+                        <Link className='navbar__links_item' to='/contacts'>Цены</Link>
+                    </li>  
+                    <li>
                         <Link className='navbar__links_item' to='/examples'>Фото работ</Link>
                     </li>
                     <li>
                         <Link className='navbar__links_item' to='/contacts'>Контакты</Link>
                     </li>
-                    <li>
-                        <Link className='navbar__links_item' to='/about'>О компании</Link>                    
-                    </li>        
                 </ul>
             </div>
         </div>

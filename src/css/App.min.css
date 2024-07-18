@@ -270,4 +270,46 @@ body {
   margin-top: 30px;
   font-size: 18px;
   color: #808080;
+}
+
+.examples {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.examples__title {
+  font-size: 36px;
+}
+.examples__description {
+  margin-top: 20px;
+}
+.examples__model {
+  width: 800px;
+  height: 90vh;
+  border-radius: 25px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.examples__model:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background: #f1f1f1;
+  -webkit-box-shadow: 0.5px 0.5px 10px #c0c0c0;
+          box-shadow: 0.5px 0.5px 10px #c0c0c0;
+}
+.examples__carousel {
+  margin-top: 30px;
+  width: 100%;
+}
+.examples__carousel img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=App.min.css.map */
