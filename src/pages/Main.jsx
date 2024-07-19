@@ -3,6 +3,7 @@ import React from 'react';
 //Components
 import AdvantageCard from '../components/UI/AdvantageCard/AdvantageCard';
 import Background from '../components/Background';
+import Button from '../components/UI/Button/Button';
 
 //Icons
 import { IoIosTime, IoMdCart } from 'react-icons/io';
@@ -47,6 +48,9 @@ const Main = () => {
                                     image={<BiSolidDiscount size={80}/>}
                                 />                            
                             </div>
+                        </div>
+                        <div className="background__content_button">
+                            <Button name='Заказать консультацию'/>
                         </div>
                     </div>
                 </div>
