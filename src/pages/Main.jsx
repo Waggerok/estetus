@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //Components
 import AdvantageCard from '../components/UI/AdvantageCard/AdvantageCard';
@@ -11,8 +11,15 @@ import { BiSolidDiscount } from 'react-icons/bi';
 
 //Photo
 import Laboratory from '../img/Laboratory.jpg';
+import MyModal from '../components/UI/MyModal/MyModal';
 
 const Main = () => {
+
+    const [modal, setModal] = useState(false);
+    
+
+    // сделать setModal(false) после того, как заполнил форму
+
     return (
         <>
             <div className="background">
@@ -49,8 +56,8 @@ const Main = () => {
                                 />                            
                             </div>
                         </div>
-                        <div className="background__content_button">
-                            <Button name='Заказать консультацию'/>
+                        <div className="background__content_button" onClick={() => setModal(true)}>
+                            <Button name='Заказать консультацию' />
                         </div>
                     </div>
                 </div>
@@ -75,11 +82,40 @@ const Main = () => {
                                 <p>
                                     Прямая коммуникация и обмен мнениями между зубными техниками и специалистами нашего фрезцентра послужат основой для успешной реализации ваших требований и пожеланий. Мы гарантируем индивидуальный подход к каждому клиенту, быструю обработку заказов и превосходное качество изделий.
                                 </p>
-                                
                             </div>
                         </div>
                     </div>
                 </section>
+
+
+
+
+
+
+                {/* тут модалка */}
+                <MyModal 
+                    visible={modal} 
+                    setVisible={setModal}
+                >
+                    <h3 style={{textAlign:'center'}}>Заказать консультацию</h3>
+                    <form className='form'>
+                        <div className="form__input">
+                            <input 
+                            type='tel' 
+                            className='form__input_tel'
+                            placeholder='Ваш телефон'
+                            />
+                            <input 
+                            type="text" 
+                            className='form__input_name'
+                            />
+                        </div>
+                        <div className="form__button">
+                            <button></button>
+                        </div>
+                        
+                    </form>
+                </MyModal>
             </div>
         </>
     )
