@@ -103,15 +103,16 @@ const Main = () => {
                             <input 
                             type='tel' 
                             className='form__input_tel'
-                            placeholder='Ваш телефон'
+                            placeholder='Ваш телефон:'
                             />
                             <input 
                             type="text" 
                             className='form__input_name'
+                            placeholder='Ваше имя:'
                             />
                         </div>
                         <div className="form__button">
-                            <button></button>
+                            <button type='submit'>Отправить</button>
                         </div>
                         
                     </form>
