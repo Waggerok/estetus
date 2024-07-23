@@ -110,11 +110,15 @@ const Main = () => {
                             className='form__input_name'
                             placeholder='Ваше имя:'
                             />
+                            <input 
+                            type="text" 
+                            className='form__input_name'
+                            placeholder='Ваша Фамилия:'
+                            />
                         </div>
                         <div className="form__button">
                             <button type='submit'>Отправить</button>
-                        </div>
-                        
+                        </div> 
                     </form>
                 </MyModal>
             </div>

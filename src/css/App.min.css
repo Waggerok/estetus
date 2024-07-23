@@ -239,7 +239,6 @@ body {
 }
 
 .form__input {
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,16 +251,16 @@ body {
   border: 2px solid #ff7b00;
   border-radius: 10px;
   margin-top: 30px;
-  height: 50px;
+  height: 40px;
 }
 .form__input_name {
   border: 2px solid #ff7b00;
   border-radius: 10px;
   margin-top: 30px;
-  height: 50px;
+  height: 40px;
 }
 .form__button {
-  margin-top: 50px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,7 +270,7 @@ body {
 }
 .form__button button {
   position: relative;
-  width: 300px;
+  width: 150px;
   height: 50px;
   border-radius: 25px;
   border: 1px solid #ff7b00;
