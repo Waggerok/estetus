@@ -239,6 +239,7 @@ body {
 }
 
 .form__input {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,17 +251,27 @@ body {
 .form__input_tel {
   border: 2px solid #ff7b00;
   border-radius: 10px;
-  margin-top: 30px;
+  margin-top: 25px;
   height: 40px;
 }
 .form__input_name {
   border: 2px solid #ff7b00;
   border-radius: 10px;
-  margin-top: 30px;
+  margin-top: 25px;
   height: 40px;
 }
+.form__agree {
+  padding-top: 10px;
+  font-size: 10px;
+  color: gray;
+}
+.form__agree span {
+  font-size: 10px;
+  color: gray;
+  text-decoration: underline;
+}
 .form__button {
-  margin-top: 30px;
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
