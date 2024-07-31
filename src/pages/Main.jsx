@@ -27,7 +27,7 @@ const Main = () => {
     const [surnameError, setSurnameError] = useState('Фамилия не может быть пустой');
 
     const validatePhone = (phone) => {
-        const regex = /^(\+7|8)[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+        const regex = /^(\+7|8)[\s]?\(?[489][0-9]{2}\)?[\s]?[0-9]{3}[\s]?[0-9]{2}[\s]?[0-9]{2}$/;
         if (!regex.test(phone)) {
           setPhoneError('Invalid phone number format');
           return false;
@@ -37,7 +37,7 @@ const Main = () => {
       };
     
       const validateName = (name) => {
-        const regex = /^[a-zA-Z\s]+$/;
+        const regex = /^[a-zA-Zа-яА-Я\s]+$/
         if (!regex.test(name.trim())) {
           setNameError('Invalid name format');
           return false;
@@ -47,7 +47,7 @@ const Main = () => {
       };
     
       const validateSurname = (surname) => {
-        const regex = /^[a-zA-Z\s]+$/;
+        const regex = /^[a-zA-Zа-яА-Я\s]+$/
         if (!regex.test(surname.trim())) {
           setSurnameError('Invalid surname format');
           return false;
@@ -77,8 +77,6 @@ const Main = () => {
           console.error('Failed to send message:', error);
         }
       };
-
-    // сделать setModal(false) после того, как заполнил форму
 
     return (
         <>
@@ -177,7 +175,7 @@ const Main = () => {
                             value={surname}
                             type="text" 
                             className='form__input_name'
-                            placeholder='Ваша Фамилия:'
+                            placeholder='Ваша фамилия:'
                             />
                         </div>
                         <div className='form__agree'>
