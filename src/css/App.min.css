@@ -431,4 +431,10 @@ body {
 .examples__carousel img {
   width: 100%;
   height: 100%;
+}
+
+.services__title {
+  margin-top: 20px;
+  font-size: 36px;
+  text-align: center;
 }/*# sourceMappingURL=App.min.css.map */
