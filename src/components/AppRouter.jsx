@@ -4,7 +4,7 @@ import Main from '../pages/Main';
 import Services from '../pages/Services';
 import Examples from '../pages/Examples';
 import Contacts from '../pages/Contacts';
-import About from '../pages/About';
+import Price from '../pages/Price';
 
 const AppRouter = () => {
     return (
@@ -13,7 +13,7 @@ const AppRouter = () => {
             <Route path='services' element={<Services/>}></Route>
             <Route path='examples' element={<Examples/>}></Route>
             <Route path='contacts' element={<Contacts/>}></Route>
-            <Route path='about' element={<About/>}></Route>
+            <Route path='price' element={<Price/>}></Route>
         </Routes>
     );
 };

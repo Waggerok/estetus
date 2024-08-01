@@ -15,7 +15,7 @@ const Navbar = () => {
                         <Link className='navbar__links_item' to='/services'>Услуги</Link>
                     </li>
                     <li>
-                        <Link className='navbar__links_item' to='/contacts'>Цены</Link>
+                        <Link className='navbar__links_item' to='/price'>Цены</Link>
                     </li>  
                     <li>
                         <Link className='navbar__links_item' to='/examples'>Портфолио</Link>
