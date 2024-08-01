@@ -437,4 +437,45 @@ body {
   margin-top: 10px;
   text-align: center;
   font-size: 36px;
+}
+.services__subtitle {
+  margin-top: 20px;
+  font-size: 22px;
+}
+.services__guarantee {
+  margin-top: 10px;
+}
+.services__guarantee ul li {
+  padding: 5px 2px;
+  font-size: 18px;
+}
+.services__variants {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.services__variants_item {
+  width: 350px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+.services__variants_item-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+}
+.services__variants_item-list {
+  margin-top: 50px;
+}
+.services__variants_item-list ul {
+  list-style-type: none;
+}
+.services__variants_item-list ul li {
+  padding: 10px 0;
+  font-size: 18px;
 }/*# sourceMappingURL=App.min.css.map */
