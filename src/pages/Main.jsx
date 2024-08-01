@@ -59,8 +59,8 @@ const Main = () => {
       const sendMessage = async () => {
         if (!validatePhone(phone) || !validateName(name) || !validateSurname(surname)) return;
     
-        const chatId = '-4108218206'; // Замените на ваш Chat ID
-        const token = '6902058245:AAHfcrwCk-sHFd5GLqAf_xqL2qki3K1KwTE'; // Замените на токен вашего бота
+        const chatId = '-4281173662'; // Замените на ваш Chat ID
+        const token = '7422236178:AAEU7C02yUCGiLmQaORM64Z5KudjJSO8NoQ'; // Замените на токен вашего бота
         const formattedMessage = `Телефон пользователя: ${phone}\nИмя пользователя: ${name}\nФамилия пользоватея: ${surname}`;
         const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(formattedMessage)}`;
     
