@@ -463,14 +463,31 @@ body {
   height: 500px;
   border: 1px solid black;
   border-radius: 25px;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.services__variants_item:hover {
+  -webkit-box-shadow: 1px 1px 20px #ff7b00;
+          box-shadow: 1px 1px 20px #ff7b00;
+  border: 2px solid #ff7b00;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 .services__variants_item-title {
+  text-shadow: 1px 1px 1px black;
   text-align: center;
   margin-top: 20px;
   font-size: 22px;
+  color: #ff7b00;
 }
 .services__variants_item-list {
-  margin-top: 50px;
+  color: white;
+  text-shadow: 1px 2px 2px black;
+  margin-top: 100px;
 }
 .services__variants_item-list ul {
   list-style-type: none;
@@ -478,4 +495,16 @@ body {
 .services__variants_item-list ul li {
   padding: 10px 0;
   font-size: 18px;
+}
+
+#variant-item_1 {
+  background: url(../img/Koronki.jpeg) center center/cover no-repeat;
+}
+
+#variant-item_2 {
+  background: url(../img/Implants.jpeg) center center/cover no-repeat;
+}
+
+#variant-item_3 {
+  background: url(../img/Abatments.jpeg) center center/cover no-repeat;
 }/*# sourceMappingURL=App.min.css.map */
