@@ -409,6 +409,7 @@ body {
   font-weight: 500;
 }
 .examples__model {
+  margin-top: 20px;
   width: 800px;
   height: 80vh;
   border-radius: 25px;
