@@ -35,6 +35,7 @@ const Services = () => {
                 </div>
                 <div className="services__variants">
                     <div className="services__variants_item" id='variant-item_1'>
+                        <div className='services__variants_item-photo'></div>
                         <div className="services__variants_item-title">
                             Коронки
                         </div>

@@ -463,8 +463,6 @@ body {
   height: 500px;
   border: 1px solid black;
   border-radius: 25px;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
@@ -472,8 +470,6 @@ body {
   -webkit-box-shadow: 1px 1px 20px #ff7b00;
           box-shadow: 1px 1px 20px #ff7b00;
   border: 2px solid #ff7b00;
-  -webkit-filter: blur(0);
-          filter: blur(0);
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
@@ -498,13 +494,13 @@ body {
 }
 
 #variant-item_1 {
-  background: url(../img/Koronki.jpeg) center center/cover no-repeat;
+  background: url(../img/Koronki.png) center center/cover no-repeat;
 }
 
 #variant-item_2 {
-  background: url(../img/Implants.jpeg) center center/cover no-repeat;
+  background: url(../img/Implants.png) center center/cover no-repeat;
 }
 
 #variant-item_3 {
-  background: url(../img/Abatments.jpeg) center center/cover no-repeat;
+  background: url(../img/Abatments.png) center center/cover no-repeat;
 }/*# sourceMappingURL=App.min.css.map */
