@@ -10,6 +10,10 @@ import Telescopic from '../ServicesFolder/Service8';
 import Byugelnoe from '../ServicesFolder/Service9';
 import Thermoplastics from '../ServicesFolder/Service10';
 import Melodient from '../ServicesFolder/Service11';
+import TableTwoPrice from '../components/TableTwoPrice';
+
+
+
 
 const Price = () => {
 
@@ -37,17 +41,12 @@ const Price = () => {
                     <div className="price__table-name">
                         Безметалловые коронки ZrO2 (KATANA, PRIME):
                     </div>
-                    <div className="price__table-button" onClick={switchTable}>
+                    <div className={table ? 'price__table-button-active' : 'price__table-button'} onClick={switchTable}>
                         {`>`}
                     </div>
                 </div>
-                {table
-                ?
-                <div></div>
-                :
-                <div></div>
-                }
                 
+                {table && <TableTwoPrice items={ZrO2}/>}
                 
             </section>
         </div>

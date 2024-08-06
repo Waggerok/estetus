@@ -516,7 +516,7 @@ body {
   font-size: 26px;
 }
 .price__table {
-  width: 800px;
+  width: 1000px;
   margin-top: 50px;
   height: 50px;
   background-color: rgba(255, 170, 80, 0.7254901961);
@@ -532,6 +532,58 @@ body {
   padding: 10px 10px;
 }
 .price__table-button {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  padding: 10px 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.price__table-button-active {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  font-weight: 700;
   padding: 10px 10px;
   cursor: pointer;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.subtable {
+  width: 1000px;
+  background-color: rgba(255, 170, 80, 0.7254901961);
+  height: 50px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px;
+}
+.subtable__title {
+  font-size: 12px;
+  font-weight: 600;
+}
+.subtable__title span {
+  font-size: 12px;
+  color: black;
+  font-weight: normal;
+}
+.subtable__price {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.subtable__price-economy {
+  font-weight: 600;
+}
+.subtable__price-premium {
+  font-weight: 600;
 }/*# sourceMappingURL=App.min.css.map */

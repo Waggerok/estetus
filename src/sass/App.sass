@@ -357,7 +357,7 @@ body
         margin-top: 20px
         font-size: 26px
     &__table
-        width: 800px
+        width: 1000px
         margin-top: 50px
         height: 50px
         background-color: #ffaa50b9
@@ -367,7 +367,39 @@ body
         &-name
             padding: 10px 10px
         &-button
+            transition: 0.5s all
             padding: 10px 10px
+            font-weight: 700
             cursor: pointer
-        
-        
+            &-active
+                transition: 0.5s all
+                font-weight: 700
+                padding: 10px 10px
+                cursor: pointer
+                transform: rotate(90deg)
+
+.subtable
+    // transition: 2s ease
+    width: 1000px
+    background-color: #ffaa50b9
+    height: 50px
+    margin-top: 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 10px
+    &__title
+        font-size: 12px
+        font-weight: 600
+        span
+            font-size: 12px
+            color: black
+            font-weight: normal
+    &__price
+        font-size: 14px
+        display: flex
+        justify-content: space-around
+        &-economy
+            font-weight: 600
+        &-premium
+            font-weight: 600
