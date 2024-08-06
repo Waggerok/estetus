@@ -504,4 +504,34 @@ body {
 
 #variant-item_3 {
   background: url(../img/Abatments.png) center center/cover no-repeat;
+}
+
+.price__title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 36px;
+}
+.price__description {
+  margin-top: 20px;
+  font-size: 26px;
+}
+.price__table {
+  width: 800px;
+  margin-top: 50px;
+  height: 50px;
+  background-color: rgba(255, 170, 80, 0.7254901961);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.price__table-name {
+  padding: 10px 10px;
+}
+.price__table-button {
+  padding: 10px 10px;
+  cursor: pointer;
 }/*# sourceMappingURL=App.min.css.map */
