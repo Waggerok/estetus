@@ -517,7 +517,7 @@ body {
 }
 .price__table {
   width: 1000px;
-  margin-top: 50px;
+  margin-top: 20px;
   height: 50px;
   background-color: rgba(255, 170, 80, 0.7254901961);
   display: -webkit-box;
@@ -550,7 +550,7 @@ body {
 
 .subtable {
   width: 1000px;
-  background-color: rgba(255, 170, 80, 0.7254901961);
+  background-color: rgba(226, 131, 30, 0.7843137255);
   height: 50px;
   margin-top: 10px;
   display: -webkit-box;
