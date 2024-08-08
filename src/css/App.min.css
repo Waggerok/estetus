@@ -582,8 +582,35 @@ body {
       justify-content: space-around;
 }
 .subtable__price-economy {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
   font-weight: 600;
+  cursor: pointer;
+}
+.subtable__price-economy:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: red;
 }
 .subtable__price-premium {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
   font-weight: 600;
+  cursor: pointer;
+}
+.subtable__price-premium:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: red;
+}
+.subtable__price-onePrice {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  font-weight: 600;
+  cursor: pointer;
+}
+.subtable__price-onePrice:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: red;
 }/*# sourceMappingURL=App.min.css.map */

@@ -19,7 +19,7 @@ import Thermoplastics from '../ServicesFolder/Service10';
 import Melodient from '../ServicesFolder/Service11';
 
 const Price = () => {
-
+    
     const [table, setTable] = useState({
         zro2: false,
         emax: false,
@@ -33,14 +33,21 @@ const Price = () => {
         thermoplastics: false,
         melodient: false,
     })
-
-
+    
+    
     const switchTable = (tableName) => {
         setTable(prevState => ({
-          ...prevState,
-          [tableName]: !prevState[tableName]
+            ...prevState,
+            [tableName]: !prevState[tableName]
         }));
+    };
+    
+    const [totalPrice, setTotalPrice] = useState(0);
+
+    const updatePrice = (costToAdd) => {
+        setTotalPrice(prevCost => prevCost + costToAdd);
       };
+      
     
     return (
         <div className='App'>
@@ -71,7 +78,7 @@ const Price = () => {
                     switchTable={() => switchTable('emax')} 
                     props='Безметалловые коронки на E.max'
                 />
-                {table.emax && <TableOnePrice items={Emax}/>}
+                {table.emax && <TableOnePrice items={Emax} updatePrice={updatePrice}/>}
 
                 <MainTable
                     table={table.abatments}
@@ -130,6 +137,10 @@ const Price = () => {
                 {table.melodient && <TableOnePrice items={Melodient}/>}
 
             </section>
+
+            <div>
+                {totalPrice}
+            </div>
         </div>
     )
 };
