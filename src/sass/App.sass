@@ -349,6 +349,7 @@ body
 // Price Page
 
 .price
+    padding-bottom: 100px
     &__title
         margin-top: 20px
         text-align: center
@@ -377,6 +378,17 @@ body
                 padding: 10px 10px
                 cursor: pointer
                 transform: rotate(90deg)
+    &__total
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        margin-top: 30px
+        &-title
+            font-size: 24px
+        &-refresh
+            margin-top: 20px
+
 
 .subtable
     width: 1000px
@@ -419,4 +431,3 @@ body
             &:hover
                 transition: 0.5s all
                 color: red
-

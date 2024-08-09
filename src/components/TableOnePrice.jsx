@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TableOnePrice = ({ items, updatePrice }) => {
+const TableOnePrice = ({ items, updateTotalPrice }) => {
     return (
         <>
             {
@@ -11,7 +11,7 @@ const TableOnePrice = ({ items, updatePrice }) => {
                             <span>{item.title}</span>
                         </div>
                         <div className="subtable__price">
-                            <div className='subtable__price-onePrice' onClick={() => updatePrice(item.price)}>
+                            <div className='subtable__price-onePrice' onClick={() => updateTotalPrice(item.price)}>
                                 {`${item.price} руб.`}
                             </div>
                         </div>

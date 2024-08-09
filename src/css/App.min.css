@@ -506,6 +506,9 @@ body {
   background: url(../img/Abatments.png) center center/cover no-repeat;
 }
 
+.price {
+  padding-bottom: 100px;
+}
 .price__title {
   margin-top: 20px;
   text-align: center;
@@ -546,6 +549,28 @@ body {
   cursor: pointer;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+.price__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+.price__total-title {
+  font-size: 24px;
+}
+.price__total-refresh {
+  margin-top: 20px;
 }
 
 .subtable {

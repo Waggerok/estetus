@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 
 //Components
-import TableTwoPrice from '../components/TableTwoPrice';
-import TableOnePrice from '../components/TableOnePrice';
-import MainTable from '../components/MainTable';
+import AllTables from '../components/AllTables';
+import Button from '../components/UI/Button/Button';
 
 //ServiceFolder
 import ZrO2 from '../ServicesFolder/Service1';
@@ -32,8 +31,21 @@ const Price = () => {
         byugelnoe: false,
         thermoplastics: false,
         melodient: false,
-    })
-    
+    });
+
+    const services = {
+        ZrO2,
+        Emax,
+        Abatments,
+        Noritake,
+        Tabs,
+        Diagnostics,
+        Temporary,
+        Telescopic,
+        Byugelnoe,
+        Thermoplastics,
+        Melodient,
+    };
     
     const switchTable = (tableName) => {
         setTable(prevState => ({
@@ -41,13 +53,12 @@ const Price = () => {
             [tableName]: !prevState[tableName]
         }));
     };
-    
+
     const [totalPrice, setTotalPrice] = useState(0);
 
-    const updatePrice = (costToAdd) => {
-        setTotalPrice(prevCost => prevCost + costToAdd);
-      };
-      
+    const updateTotalPrice = (costToAdd) =>  {
+        setTotalPrice(prevCost => prevCost + costToAdd)
+    };
     
     return (
         <div className='App'>
@@ -59,88 +70,17 @@ const Price = () => {
                     Здесь вы можете ознакомиться со всеми спецификациями наших изделий, а также узнать цены на интересующие услуги.
                 </div>
                 
-                <MainTable 
-                    table={table.zro2} 
-                    switchTable={() => switchTable('zro2')} 
-                    props='Безметалловые коронки ZrO2(KATANA, PRIME)'
-                />
-                {table.zro2 && <TableTwoPrice items={ZrO2}/>}
-                
-                <MainTable 
-                    table={table.noritake} 
-                    switchTable={() => switchTable('noritake')} 
-                    props='Металокерамика (Noritake)'
-                />
-                {table.noritake && <TableTwoPrice items={Noritake}/>}
+                <AllTables tableState={table} switchTable={switchTable} updateTotalPrice={updateTotalPrice} services={services}/>
 
-                <MainTable
-                    table={table.emax}
-                    switchTable={() => switchTable('emax')} 
-                    props='Безметалловые коронки на E.max'
-                />
-                {table.emax && <TableOnePrice items={Emax} updatePrice={updatePrice}/>}
-
-                <MainTable
-                    table={table.abatments}
-                    switchTable={() => switchTable('abatments')}
-                    props='Абатменты'
-                />
-                {table.abatments && <TableOnePrice items={Abatments}/>}
-
-                <MainTable
-                    table={table.tabs}
-                    switchTable={() => switchTable('tabs')}
-                    props='Вкладки'
-                />
-                {table.tabs && <TableOnePrice items={Tabs}/>}
-
-                <MainTable
-                    table={table.diagnostics}
-                    switchTable={() => switchTable('diagnostics')}
-                    props='Диагностика'
-                />
-                {table.diagnostics && <TableOnePrice items={Diagnostics}/>}
-
-                <MainTable
-                    table={table.temporary}
-                    switchTable={() => switchTable('temporary')}
-                    props='Временные пластмассовые коронки и сплинты'
-                />
-                {table.temporary && <TableOnePrice items={Temporary}/>}
-
-                <MainTable
-                    table={table.telescopic}
-                    switchTable={() => switchTable('telescopic')}
-                    props='Телескопические коронки'
-                />
-                {table.telescopic && <TableOnePrice items={Telescopic}/>}
-
-                <MainTable
-                    table={table.byugelnoe}
-                    switchTable={() => switchTable('byugelnoe')}
-                    props='Бюгельное протезирование'
-                />
-                {table.byugelnoe && <TableOnePrice items={Byugelnoe}/>}
-
-                <MainTable
-                    table={table.thermoplastics}
-                    switchTable={() => switchTable('thermoplastics')}
-                    props='Термопласты'
-                />
-                {table.thermoplastics && <TableOnePrice items={Thermoplastics}/>}
-
-                <MainTable
-                    table={table.melodient}
-                    switchTable={() => switchTable('melodient')}
-                    props='Съемное протезирование (MELIODENT Kulzer Германия):'
-                />
-                {table.melodient && <TableOnePrice items={Melodient}/>}
-
+                <div className="price__total">
+                    <div className="price__total-title">Общая стоимость всех услуг: {`${totalPrice} руб.`}</div>
+                    <div className="price__total-refresh" onClick={() => setTotalPrice(0)}>
+                        <Button name='Сбросить цену'/>
+                    </div>
+                </div>
             </section>
 
-            <div>
-                {totalPrice}
-            </div>
+            
         </div>
     )
 };
