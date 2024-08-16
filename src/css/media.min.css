@@ -1,4 +1,14 @@
-@media (max-width: 770px) {
+@media (max-width: 1200px) {
+  .App {
+    width: 992px;
+  }
+}
+@media (max-width: 991px) {
+  .App {
+    width: 768px;
+  }
+}
+@media (max-width: 767px) {
   .header__navbar {
     position: fixed;
     top: 0;
@@ -47,5 +57,10 @@
     cursor: pointer;
     font-size: 24px;
     margin-left: auto;
+  }
+}
+@media (max-width: 575px) {
+  .App {
+    width: 400px;
   }
 }/*# sourceMappingURL=media.min.css.map */

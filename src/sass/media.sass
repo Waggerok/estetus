@@ -1,6 +1,15 @@
 @import 'AppVariables.sass'
-    
-@media (max-width: 770px)
+
+@media ( max-width: 1200px)
+    .App
+        width: 992px
+
+@media ( max-width: 991px)
+    .App
+        width: 768px
+
+@media (max-width: 767px)
+    //navbar
     .header
         &__navbar
             position: fixed
@@ -31,3 +40,6 @@
             font-size: 24px
             margin-left: auto
                     
+@media ( max-width: 575px)
+    .App
+        width: 400px
