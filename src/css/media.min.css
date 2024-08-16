@@ -1,0 +1,51 @@
+@media (max-width: 770px) {
+  .header__navbar {
+    position: fixed;
+    top: 0;
+    left: -225px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 220px;
+    height: 100%;
+    background-color: #fff;
+    border: 2px solid #ff7b00;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    -webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-transition: -webkit-transform 0.3s linear;
+    transition: -webkit-transform 0.3s linear;
+    transition: transform 0.3s linear;
+    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+  }
+  .header__navbar_links {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    padding-top: 40px;
+  }
+  .header__navbar_links-item {
+    margin: 10px 0;
+    margin-left: 0;
+  }
+  .header__button {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: auto;
+  }
+}/*# sourceMappingURL=media.min.css.map */

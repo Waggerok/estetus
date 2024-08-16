@@ -16,25 +16,25 @@ body
 
 //Navbar
 
-.navbar
-    display: flex
-    align-items: center
+.header
     height: 70px
-    width: 100vw
-    padding: 0 20px
+    width: 100%
     background-color: #f1f1f1
     border-bottom: 1px solid $main-color
+    z-index: 3
+    display: flex
+    align-items: center
+    padding: 0 20px
     &__logo
         text-decoration: none
-        color: $main-color
-        font-size: 30px
+        color: $text-color-navbar
         display: flex
-        justify-content: space-around
         align-items: center
         gap: 10px
+        font-size: 30px
+        color: $main-color
         font-weight: 500
-        transition: 0.5s all
-        margin-left: 50px
+        transition: 1s all
         img
             width: 50px
             height: 50px
@@ -45,36 +45,40 @@ body
             img
                 transition: 1s all
                 transform: rotateZ(180deg)
-    &__links
-        display: flex
-        align-items: center
+                
+    &__navbar
         margin-left: auto
-        margin-right: auto
-        ul
-            margin: 0
-            margin-right: 140px
+        padding-top: 10px
+        &_links
+            display: flex
+            align-items: center
             list-style-type: none
-            li
-                display: inline-block
-                margin-right: 50px
-        &_item
-            text-decoration: none
-            color: $text-color-navbar
-            font-size: 16px
-            transition: 1s all
-            &::after
-                margin-top: 1px
-                transition: 0.5s all
-                content: ''
-                display: block
-                width: 0
-                height: 2px
-                background-color: $main-color
-            &:hover
-                color: $main-color
+            &-item
+                margin-left: 20px
+                font-size: 16px
                 transition: 1s all
+                a
+                    text-decoration: none
+                    color: $text-color-navbar
                 &::after
-                    width: 100%    
+                    margin-top: 1px
+                    transition: 0.5s all
+                    content: ''
+                    display: block
+                    width: 0
+                    height: 2px
+                    background-color: $main-color
+                &:hover
+                    color: $main-color
+                    transition: 1s all
+                    &::after
+                        width: 100%    
+    &__button
+        display: none
+
+.header__navbar.active
+    transform: translateX(100%)
+
 
 //Main Page
 
