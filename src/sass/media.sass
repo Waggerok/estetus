@@ -4,12 +4,32 @@
     .App
         width: 992px
 
+    //Service Page
+
+    .services
+        &__variants
+            &_item
+                width: 280px
+
+
 @media ( max-width: 991px)
     .App
         width: 768px
+    
+
+    //Service Page
+
+    .services
+        &__variants
+            &_item
+                width: 250px
 
 @media (max-width: 767px)
-    //navbar
+
+    .App
+        width: 600px
+
+    //Navbar
     .header
         &__navbar
             position: fixed
@@ -39,7 +59,55 @@
             cursor: pointer
             font-size: 24px
             margin-left: auto
+
+    //Service Page
+
+    .services
+        &__variants
+            &_item
+                scale: 1.05
+                margin-top: 10px
+                width: 180px
+                height: 350px
+                pointer-events: none
+                &-title
+                    font-size: 18px
+                &-list
+                    margin-top: 10px
+                    margin-right: 10px
+                    ul
+                        li
+                            font-size: 12px
                     
 @media ( max-width: 575px)
     .App
-        width: 400px
+        width: 300px
+
+    //Service Page
+    
+    .services
+        &__title
+            font-size: 26px
+        &__subtitle
+            font-size: 16px
+            // text-align: start
+        &__guarantee
+            ul
+                li
+                    font-size: 14px
+        &__variants
+            margin-top: 0px
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            align-content: center
+            &_item
+                width: 250px
+                height: 250px
+                margin-top: 20px
+                &-title
+                    font-size: 18px
+                &-list
+                    ul
+                        li
+                            font-size: 12px

@@ -2,13 +2,22 @@
   .App {
     width: 992px;
   }
+  .services__variants_item {
+    width: 280px;
+  }
 }
 @media (max-width: 991px) {
   .App {
     width: 768px;
   }
+  .services__variants_item {
+    width: 250px;
+  }
 }
 @media (max-width: 767px) {
+  .App {
+    width: 600px;
+  }
   .header__navbar {
     position: fixed;
     top: 0;
@@ -58,9 +67,60 @@
     font-size: 24px;
     margin-left: auto;
   }
+  .services__variants_item {
+    scale: 1.05;
+    margin-top: 10px;
+    width: 180px;
+    height: 350px;
+    pointer-events: none;
+  }
+  .services__variants_item-title {
+    font-size: 18px;
+  }
+  .services__variants_item-list {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .services__variants_item-list ul li {
+    font-size: 12px;
+  }
 }
 @media (max-width: 575px) {
   .App {
-    width: 400px;
+    width: 300px;
+  }
+  .services__title {
+    font-size: 26px;
+  }
+  .services__subtitle {
+    font-size: 16px;
+  }
+  .services__guarantee ul li {
+    font-size: 14px;
+  }
+  .services__variants {
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .services__variants_item {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+  }
+  .services__variants_item-title {
+    font-size: 18px;
+  }
+  .services__variants_item-list ul li {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=media.min.css.map */
