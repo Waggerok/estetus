@@ -432,6 +432,7 @@ body {
 .examples__carousel {
   margin-top: 20px;
   width: 100%;
+  padding-bottom: 20px;
 }
 .examples__carousel img {
   width: 100%;

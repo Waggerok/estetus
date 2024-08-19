@@ -3,9 +3,8 @@ import { useState } from 'react';
 
 //Bootstrap
 import Carousel from 'react-bootstrap/Carousel';
-// import ExampleCarouselImage from 'components/ExampleCarouselImage';
 
-
+//Examples
 import example1 from '../img/examples__photo/example1.jpeg';
 import example2 from '../img/examples__photo/example2.jpeg';
 import example3 from '../img/examples__photo/example3.jpeg';
@@ -23,26 +22,26 @@ function ControlledCarousel() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item style={{height: '600px'}}>
-            <img src={example1}/>
+      <Carousel.Item style={{height: '700px'}}>
+            <img src={example1} alt='example'/>
       </Carousel.Item>
-      <Carousel.Item style={{height: '600px'}}>
-            <img src={example2}/>
+      <Carousel.Item style={{height: '700px'}}>
+            <img src={example2} alt='example'/>
       </Carousel.Item>
-      <Carousel.Item style={{height: '600px'}}>
-            <img src={example3}/>
+      <Carousel.Item style={{height: '700px'}}>
+            <img src={example3} alt='example'/>
       </Carousel.Item>
-      <Carousel.Item style={{height: '600px'}}>
-            <img src={example4}/>
+      <Carousel.Item style={{height: '700px'}}>
+            <img src={example4} alt='example'/>
       </Carousel.Item>
-      <Carousel.Item style={{height: '600px'}}>
-            <img src={example5}/>
+      <Carousel.Item style={{height: '700px'}}>
+            <img src={example5} alt='example'/>
       </Carousel.Item>
-      <Carousel.Item style={{height: '600px'}}>
-            <img src={example6}/>
+      <Carousel.Item style={{height: '700px'}}>
+            <img src={example6} alt='example'/>
       </Carousel.Item>
-      <Carousel.Item style={{height: '600px'}}>
-            <img src={example7}/>
+      <Carousel.Item style={{height: '700px'}}>
+            <img src={example7} alt='example'/>
       </Carousel.Item>
     </Carousel>
   );
