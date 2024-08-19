@@ -84,6 +84,21 @@
   .services__variants_item-list ul li {
     font-size: 12px;
   }
+  .contacts__title {
+    font-size: 36px;
+  }
+  .contacts__info_connections_telephone-title {
+    font-size: 20px;
+  }
+  .contacts__info_connections_telephone-description a {
+    font-size: 14px;
+  }
+  .contacts__info_connections_links-title {
+    font-size: 20px;
+  }
+  .contacts__info_connections_links-description {
+    font-size: 14px;
+  }
 }
 @media (max-width: 575px) {
   .App {
@@ -122,5 +137,14 @@
   }
   .services__variants_item-list ul li {
     font-size: 12px;
+  }
+  .contacts__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }/*# sourceMappingURL=media.min.css.map */

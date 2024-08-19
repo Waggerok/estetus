@@ -11,7 +11,6 @@
             &_item
                 width: 280px
 
-
 @media ( max-width: 991px)
     .App
         width: 768px
@@ -78,6 +77,25 @@
                     ul
                         li
                             font-size: 12px
+
+    //Contact Page
+
+    .contacts
+        &__title
+            font-size: 36px
+        &__info
+            &_connections
+                &_telephone
+                    &-title
+                        font-size: 20px
+                    &-description
+                        a
+                            font-size: 14px
+                &_links
+                    &-title
+                        font-size: 20px
+                    &-description
+                        font-size: 14px
                     
 @media ( max-width: 575px)
     .App
@@ -111,3 +129,10 @@
                     ul
                         li
                             font-size: 12px
+    
+    //Contact Page
+
+    .contacts
+        &__info
+            display: flex
+            flex-direction: column

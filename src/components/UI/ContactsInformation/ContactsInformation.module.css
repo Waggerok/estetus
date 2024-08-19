@@ -17,3 +17,13 @@
     font-size: 16px;
     color: var(--description_color);
 }
+
+@media (max-width: 767px) {
+    .info__title {
+        font-size: 20px;
+    }
+
+    .info__description {
+        font-size: 14px;
+    }
+}
