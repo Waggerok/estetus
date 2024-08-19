@@ -9,7 +9,7 @@
     .services
         &__variants
             &_item
-                width: 280px
+                width: 280px    
 
 @media ( max-width: 991px)
     .App
@@ -22,6 +22,20 @@
         &__variants
             &_item
                 width: 250px
+    
+    //Price Page
+    
+    .price
+        &__title
+            font-size: 30px
+        &__description
+            font-size: 20px
+    
+    .subtable
+        &__title
+            width: 500px
+        &__price
+            font-size: 10px
 
 @media (max-width: 767px)
 
@@ -96,6 +110,13 @@
                         font-size: 20px
                     &-description
                         font-size: 14px
+    
+    //Price Page
+    
+    .subtable
+        height: 70px
+        &__title
+            width: 300px
                     
 @media ( max-width: 575px)
     .App
@@ -136,3 +157,24 @@
         &__info
             display: flex
             flex-direction: column
+
+    //Price Page
+
+    .price
+        &__title
+            font-size: 26px
+        &__description
+            font-size: 16px
+        &__table
+            height: 70px
+            &-name
+                font-size: 16px
+        &__total
+            &-title
+                font-size: 16px
+    
+    .subtable
+        height: 90px
+        &__title
+            width: 250px
+            font-size: 10px

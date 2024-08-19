@@ -13,6 +13,18 @@
   .services__variants_item {
     width: 250px;
   }
+  .price__title {
+    font-size: 30px;
+  }
+  .price__description {
+    font-size: 20px;
+  }
+  .subtable__title {
+    width: 500px;
+  }
+  .subtable__price {
+    font-size: 10px;
+  }
 }
 @media (max-width: 767px) {
   .App {
@@ -99,6 +111,12 @@
   .contacts__info_connections_links-description {
     font-size: 14px;
   }
+  .subtable {
+    height: 70px;
+  }
+  .subtable__title {
+    width: 300px;
+  }
 }
 @media (max-width: 575px) {
   .App {
@@ -146,5 +164,27 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .price__title {
+    font-size: 26px;
+  }
+  .price__description {
+    font-size: 16px;
+  }
+  .price__table {
+    height: 70px;
+  }
+  .price__table-name {
+    font-size: 16px;
+  }
+  .price__total-title {
+    font-size: 16px;
+  }
+  .subtable {
+    height: 90px;
+  }
+  .subtable__title {
+    width: 250px;
+    font-size: 10px;
   }
 }/*# sourceMappingURL=media.min.css.map */
