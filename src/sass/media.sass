@@ -11,9 +11,32 @@
             &_item
                 width: 280px    
 
+    //Main Page
+
+    .background
+        &__content
+            width: 992px
+
+
 @media ( max-width: 991px)
     .App
         width: 768px
+
+    //Main Page
+
+    .background
+        &__content
+            width: 768px   
+            &_start
+                &-title
+                    font-size: 30px 
+                    span
+                        font-size: 40px
+            &_advantages
+                padding-top: 100px
+                &-text
+                    font-size: 30px
+
     
     //Examples Page
     
@@ -84,6 +107,20 @@
             cursor: pointer
             font-size: 24px
             margin-left: auto
+
+    // Main Page
+
+    .background
+        &__content
+            width: 600px
+            &_advantages
+                padding-top: 50px
+                &-cards
+                    display: flex
+                    flex-direction: column
+                    flex-wrap: wrap
+                    align-content: center
+                    gap: 0
 
     //Service Page
 
@@ -213,3 +250,15 @@
             height: 300px
         .imageItem
             height: 300px
+
+    //Main Page
+
+    .background
+        &__content
+            &_start
+                &-title
+                    font-size: 28px
+                    span
+                        font-size: 38px
+            &_button
+                margin-top: 30px        

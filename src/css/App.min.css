@@ -121,7 +121,7 @@ body {
 
 .background {
   position: relative;
-  height: 800px;
+  min-height: 800px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,6 +129,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 50px;
 }
 .background__media {
   position: absolute;
@@ -166,7 +167,7 @@ body {
   z-index: 2;
 }
 .background__content_start-title {
-  margin-top: 20px;
+  margin-top: 60px;
   color: white;
   font-size: 36px;
   text-align: center;
@@ -177,7 +178,7 @@ body {
   text-shadow: 3px 3px 10px #ff7b00;
 }
 .background__content_advantages {
-  padding-top: 200px;
+  padding-top: 180px;
 }
 .background__content_advantages-text {
   text-align: center;
@@ -193,9 +194,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 .background__content_button {
   display: -webkit-box;

@@ -5,10 +5,28 @@
   .services__variants_item {
     width: 280px;
   }
+  .background__content {
+    width: 992px;
+  }
 }
 @media (max-width: 991px) {
   .App {
     width: 768px;
+  }
+  .background__content {
+    width: 768px;
+  }
+  .background__content_start-title {
+    font-size: 30px;
+  }
+  .background__content_start-title span {
+    font-size: 40px;
+  }
+  .background__content_advantages {
+    padding-top: 100px;
+  }
+  .background__content_advantages-text {
+    font-size: 30px;
   }
   .examples__title {
     font-size: 30px;
@@ -90,6 +108,26 @@
     cursor: pointer;
     font-size: 24px;
     margin-left: auto;
+  }
+  .background__content {
+    width: 600px;
+  }
+  .background__content_advantages {
+    padding-top: 50px;
+  }
+  .background__content_advantages-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    gap: 0;
   }
   .services__variants_item {
     scale: 1.05;
@@ -221,5 +259,14 @@
   }
   .examples .imageItem {
     height: 300px;
+  }
+  .background__content_start-title {
+    font-size: 28px;
+  }
+  .background__content_start-title span {
+    font-size: 38px;
+  }
+  .background__content_button {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=media.min.css.map */

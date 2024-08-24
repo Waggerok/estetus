@@ -96,19 +96,16 @@ const Main = () => {
                             <div className="background__content_advantages-cards">
                                 <AdvantageCard
                                     title='БЕСПЛАТНАЯ ДОСТАВКА' 
-                                    title2=''
                                     description='Курьером по москве'
                                     image={<IoMdCart size={80} />}                                
                                 />   
                                 <AdvantageCard 
                                     title='ОТЛОЖЕННЫЙ ПЛАТЕЖ'
-                                    title2=''
                                     description='безопасная двухэтапная оплата'
                                     image={<IoIosTime size={80} />}
                                 />
                                 <AdvantageCard 
-                                    title='СКИДКИ'
-                                    title2='ДЛЯ ПОСТОЯННЫХ КЛИЕНТОВ'
+                                    title='СКИДКИ ДЛЯ ПОСТОЯННЫХ КЛИЕНТОВ'
                                     description='по нашей бонусной программе'
                                     image={<BiSolidDiscount size={80}/>}
                                 />                            

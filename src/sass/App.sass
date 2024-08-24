@@ -83,10 +83,11 @@ body
 
 .background
     position: relative
-    height: 800px
+    min-height: 800px
     width: 100%
     display: flex
     justify-content: center
+    padding-bottom: 50px
     &__media
         position: absolute
         left: 0
@@ -118,7 +119,7 @@ body
         z-index: 2
         &_start
             &-title
-                margin-top: 20px
+                margin-top: 60px
                 color: white
                 font-size: 36px
                 text-align: center
@@ -127,7 +128,7 @@ body
                     font-size: 42px
                     text-shadow: 3px 3px 10px $main-color
         &_advantages
-            padding-top: 200px
+            padding-top: 180px
             &-text
                 text-align: center
                 font-size: 36px
@@ -137,7 +138,7 @@ body
                 gap: 50px
                 display: flex
                 justify-content: space-between
-                align-items: center
+                align-items: baseline
         &_button
             display: flex
             justify-content: flex-end
