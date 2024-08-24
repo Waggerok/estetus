@@ -16,7 +16,16 @@
         width: 768px
     
     //Examples Page
-        
+    
+    .examples
+        &__title
+            font-size: 30px
+        &__description
+            font-size: 18px
+        &__model
+            width: 768px
+        .imageItem
+            height: 400px      
 
     //Service Page
 
@@ -45,6 +54,7 @@
         width: 600px
 
     //Navbar
+
     .header
         &__navbar
             position: fixed
@@ -119,6 +129,14 @@
         height: 70px
         &__title
             width: 300px
+
+    //Example Page
+    
+    .examples
+        &__model
+            width: 600px
+        &__description
+            font-size: 16px
                     
 @media ( max-width: 575px)
     .App
@@ -131,7 +149,6 @@
             font-size: 26px
         &__subtitle
             font-size: 16px
-            // text-align: start
         &__guarantee
             ul
                 li
@@ -156,6 +173,8 @@
     //Contact Page
 
     .contacts
+        &__title
+            font-size: 22px
         &__info
             display: flex
             flex-direction: column
@@ -164,7 +183,7 @@
 
     .price
         &__title
-            font-size: 26px
+            font-size: 22px
         &__description
             font-size: 16px
         &__table
@@ -180,3 +199,17 @@
         &__title
             width: 250px
             font-size: 10px
+    
+    //Example Page
+
+    .examples
+        &__title
+            font-size: 22px
+        &__description
+            font-size: 16px
+            font-weight: normal
+        &__model
+            width: 220px
+            height: 300px
+        .imageItem
+            height: 300px

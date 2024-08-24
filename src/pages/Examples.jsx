@@ -3,11 +3,6 @@ import { Canvas } from '@react-three/fiber';
 import React from 'react';
 import { Model } from '../components/Model';
 
-//photos
-import example1 from '../img/examples__photo/example1.jpeg';
-import example2 from '../img/examples__photo/example2.jpeg';
-import example3 from '../img/examples__photo/example3.jpeg';
-
 import Carouselka from '../components/Carouselka'
 
 

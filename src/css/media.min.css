@@ -10,6 +10,18 @@
   .App {
     width: 768px;
   }
+  .examples__title {
+    font-size: 30px;
+  }
+  .examples__description {
+    font-size: 18px;
+  }
+  .examples__model {
+    width: 768px;
+  }
+  .examples .imageItem {
+    height: 400px;
+  }
   .services__variants_item {
     width: 250px;
   }
@@ -117,6 +129,12 @@
   .subtable__title {
     width: 300px;
   }
+  .examples__model {
+    width: 600px;
+  }
+  .examples__description {
+    font-size: 16px;
+  }
 }
 @media (max-width: 575px) {
   .App {
@@ -156,6 +174,9 @@
   .services__variants_item-list ul li {
     font-size: 12px;
   }
+  .contacts__title {
+    font-size: 22px;
+  }
   .contacts__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -166,7 +187,7 @@
             flex-direction: column;
   }
   .price__title {
-    font-size: 26px;
+    font-size: 22px;
   }
   .price__description {
     font-size: 16px;
@@ -186,5 +207,19 @@
   .subtable__title {
     width: 250px;
     font-size: 10px;
+  }
+  .examples__title {
+    font-size: 22px;
+  }
+  .examples__description {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .examples__model {
+    width: 220px;
+    height: 300px;
+  }
+  .examples .imageItem {
+    height: 300px;
   }
 }/*# sourceMappingURL=media.min.css.map */
