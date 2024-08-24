@@ -112,7 +112,7 @@ const Main = () => {
                             </div>
                         </div>
                         <div className="background__content_button" onClick={() => setModal(true)}>
-                            <Button name='Заказать консультацию' />
+                            <Button name='Заказать консультацию'/>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@ const Main = () => {
             <div className="App">
                 <section className='welcome'>
                     <div className="welcome__title">
-                        Добро пожаловать в зуботехническую лабораторию Estetus Lab
+                        Добро пожаловать в зуботехническую лабораторию <span>Estetus Lab</span>
                     </div>
                     <div className="welcome__content">
                         <div className="welcome__content_photo">

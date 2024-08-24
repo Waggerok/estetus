@@ -24,7 +24,7 @@ body
     z-index: 3
     display: flex
     align-items: center
-    padding: 0 20px
+    padding: 0 30px
     &__logo
         text-decoration: none
         color: $text-color-navbar
@@ -128,7 +128,7 @@ body
                     font-size: 42px
                     text-shadow: 3px 3px 10px $main-color
         &_advantages
-            padding-top: 180px
+            padding-top: 120px
             &-text
                 text-align: center
                 font-size: 36px
@@ -150,7 +150,10 @@ body
         text-align: center
         margin-top: 20px
         font-size: 36px
-        color: $main-color
+        color: black
+        span
+            color: $main-color
+            font-size: 36px
     &__content
         margin-top: 50px
         display: flex
@@ -281,7 +284,7 @@ body
         background: linear-gradient(45deg,rgba(0, 0, 0, 0) 48%,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) 52%),linear-gradient(-45deg,rgba(0, 0, 0, 0) 48%,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) 52%)
         background-size: 1em 1em
         background-color: #fff
-
+        border: 2px solid black
         &:hover
             transition: 0.5s all
             box-shadow: 0.5px 0.5px 10px #c0c0c0
@@ -368,7 +371,7 @@ body
         font-size: 20px
         justify-content: space-between
         &-name
-            padding: 10px 10px
+            padding: 10px 20px
         &-button
             transition: 0.5s all
             padding: 10px 10px
@@ -391,7 +394,6 @@ body
         &-refresh
             margin-top: 20px
 
-
 .subtable
     background-color: #ffc485da
     height: 50px
@@ -411,10 +413,14 @@ body
         font-size: 14px
         display: flex
         justify-content: space-around
+        gap: 5px
         &-economy
             transition: 0.5s all
             font-weight: 600
             cursor: pointer
+            border: 1px solid black
+            border-radius: 10px
+            padding-left: 5px
             &:hover
                 transition: 0.5s all
                 color: red
@@ -422,6 +428,9 @@ body
             transition: 0.5s all
             font-weight: 600
             cursor: pointer
+            border: 1px solid black
+            border-radius: 10px
+            padding-left: 5px
             &:hover
                 transition: 0.5s all
                 color: red
@@ -429,6 +438,9 @@ body
             transition: 0.5s all
             font-weight: 600
             cursor: pointer
+            border: 1px solid black
+            border-radius: 10px
+            padding-left: 5px
             &:hover
                 transition: 0.5s all
                 color: red

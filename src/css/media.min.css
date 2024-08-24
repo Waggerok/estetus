@@ -8,6 +8,12 @@
   .background__content {
     width: 992px;
   }
+  .welcome__title {
+    font-size: 34px;
+  }
+  .welcome__title span {
+    font-size: 34px;
+  }
 }
 @media (max-width: 991px) {
   .App {
@@ -27,6 +33,15 @@
   }
   .background__content_advantages-text {
     font-size: 30px;
+  }
+  .welcome__content {
+    gap: 20px;
+  }
+  .welcome__content_photo {
+    width: 400px;
+  }
+  .welcome__content_text-description p {
+    font-size: 16px;
   }
   .examples__title {
     font-size: 30px;
@@ -231,7 +246,7 @@
     font-size: 16px;
   }
   .price__table {
-    height: 70px;
+    height: 80px;
   }
   .price__table-name {
     font-size: 16px;
@@ -268,5 +283,11 @@
   }
   .background__content_button {
     margin-top: 30px;
+  }
+  .welcome__content_text-description p {
+    font-size: 14px;
+  }
+  .welcome__content_photo {
+    display: none;
   }
 }/*# sourceMappingURL=media.min.css.map */

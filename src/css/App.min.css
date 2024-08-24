@@ -34,7 +34,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 .header__logo {
   text-decoration: none;
@@ -178,7 +178,7 @@ body {
   text-shadow: 3px 3px 10px #ff7b00;
 }
 .background__content_advantages {
-  padding-top: 180px;
+  padding-top: 120px;
 }
 .background__content_advantages-text {
   text-align: center;
@@ -212,7 +212,11 @@ body {
   text-align: center;
   margin-top: 20px;
   font-size: 36px;
+  color: black;
+}
+.welcome__title span {
   color: #ff7b00;
+  font-size: 36px;
 }
 .welcome__content {
   margin-top: 50px;
@@ -425,6 +429,7 @@ body {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 52%), linear-gradient(-45deg, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 52%);
   background-size: 1em 1em;
   background-color: #fff;
+  border: 2px solid black;
 }
 .examples__model:hover {
   -webkit-transition: 0.5s all;
@@ -542,7 +547,7 @@ body {
           justify-content: space-between;
 }
 .price__table-name {
-  padding: 10px 10px;
+  padding: 10px 20px;
 }
 .price__table-button {
   -webkit-transition: 0.5s all;
@@ -614,12 +619,16 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  gap: 5px;
 }
 .subtable__price-economy {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
   font-weight: 600;
   cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 5px;
 }
 .subtable__price-economy:hover {
   -webkit-transition: 0.5s all;
@@ -631,6 +640,9 @@ body {
   transition: 0.5s all;
   font-weight: 600;
   cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 5px;
 }
 .subtable__price-premium:hover {
   -webkit-transition: 0.5s all;
@@ -642,6 +654,9 @@ body {
   transition: 0.5s all;
   font-weight: 600;
   cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 5px;
 }
 .subtable__price-onePrice:hover {
   -webkit-transition: 0.5s all;
