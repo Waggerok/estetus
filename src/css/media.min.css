@@ -113,6 +113,7 @@
     -ms-flex-line-pack: start;
         align-content: flex-start;
     padding-top: 40px;
+    padding-right: 25px;
   }
   .header__navbar_links-item {
     margin: 10px 0;
@@ -283,6 +284,9 @@
   }
   .background__content_button {
     margin-top: 30px;
+  }
+  .welcome__content {
+    margin-top: 0;
   }
   .welcome__content_text-description p {
     font-size: 14px;
