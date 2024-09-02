@@ -208,6 +208,9 @@ body {
   margin-top: 100px;
 }
 
+.welcome {
+  padding-bottom: 50px;
+}
 .welcome__title {
   text-align: center;
   margin-top: 20px;
@@ -352,6 +355,9 @@ body {
           box-shadow: 1px 1px 5px #ff7b00;
 }
 
+.contacts {
+  padding-bottom: 50px;
+}
 .contacts__title {
   margin-top: 20px;
   font-size: 40px;
@@ -407,6 +413,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 50px;
 }
 .examples__title {
   font-size: 36px;
@@ -450,6 +457,9 @@ body {
   height: 700px;
 }
 
+.services {
+  padding-bottom: 50px;
+}
 .services__title {
   margin-top: 20px;
   text-align: center;
