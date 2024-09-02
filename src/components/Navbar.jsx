@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 //Logos
-import logo from '../img/logo.png';
+import logo from '../img/logo1.png';
 import { RxHamburgerMenu } from "react-icons/rx";
 
 

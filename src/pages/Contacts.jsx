@@ -21,7 +21,7 @@ const Contacts = () => {
                     <div className="contacts__info_location">
                         <ContactsInformation 
                             title='Наш фактический адрес:' 
-                            description='г. Реутов, Юбилейный пр-кт, д 48.'
+                            description='г. Реутов, Юбилейный пр-кт, д 41.'
                             description2=''
                         />
                         <ContactsInformation

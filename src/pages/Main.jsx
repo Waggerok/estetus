@@ -96,7 +96,7 @@ const Main = () => {
                             <div className="background__content_advantages-cards">
                                 <AdvantageCard
                                     title='БЕСПЛАТНАЯ ДОСТАВКА' 
-                                    description='Курьером по москве'
+                                    description='Курьером по Москве'
                                     image={<IoMdCart size={80} />}                                
                                 />   
                                 <AdvantageCard 
