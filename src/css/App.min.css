@@ -315,6 +315,10 @@ body {
   margin-top: 25px;
   height: 40px;
 }
+.form__input_file {
+  cursor: pointer;
+  margin-top: 25px;
+}
 .form__agree {
   padding-top: 10px;
   font-size: 10px;

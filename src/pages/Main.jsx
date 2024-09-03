@@ -21,6 +21,7 @@ const Main = () => {
     const [phone, setPhone] = useState('');
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
+    const [file, setFile] = useState(null);
     
     const [phoneError, setPhoneError] = useState('Телефон не может быть пустым');
     const [nameError, setNameError] = useState('Имя не может быть пустым');
@@ -56,23 +57,40 @@ const Main = () => {
         return true;
       };
 
+      const handleFileChange = (event) => {
+        setFile(event.target.files[0]);
+      };
+    
+
       const sendMessage = async () => {
         if (!validatePhone(phone) || !validateName(name) || !validateSurname(surname)) return;
     
         const chatId = '-4281173662'; // Замените на ваш Chat ID
         const token = '7422236178:AAEU7C02yUCGiLmQaORM64Z5KudjJSO8NoQ'; // Замените на токен вашего бота
-        const formattedMessage = `Телефон пользователя: ${phone}\nИмя пользователя: ${name}\nФамилия пользоватея: ${surname}`;
-        const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(formattedMessage)}`;
     
         try {
-          const response = await fetch(url);
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          setPhone('');
-          setName('');
-          setSurname('');
-          setModal(false)
+            const formData = new FormData();
+            formData.append('chat_id', chatId);
+            formData.append('parse_mode', 'HTML');
+            formData.append('caption', `Телефон пользователя: ${phone};\nИмя пользователя: ${name};\nФамилия пользователя: ${surname};`);
+            
+            if (file) {
+                formData.append('document', file);
+            }
+            
+            const response = await fetch(`https://api.telegram.org/bot${token}/sendDocument`, {
+                method: 'POST',
+                body: formData,
+            });
+    
+            const result = await response.json();
+            console.log('Message sent successfully:', result);
+                        
+            setPhone('');
+            setName('');
+            setSurname('');
+            setFile(null);
+            setModal(false)
         } catch (error) {
           console.error('Failed to send message:', error);
         }
@@ -101,12 +119,12 @@ const Main = () => {
                                 />   
                                 <AdvantageCard 
                                     title='ОТЛОЖЕННЫЙ ПЛАТЕЖ'
-                                    description='безопасная двухэтапная оплата'
+                                    description='Безопасная двухэтапная оплата'
                                     image={<IoIosTime size={80} />}
                                 />
                                 <AdvantageCard 
                                     title='СКИДКИ ДЛЯ ПОСТОЯННЫХ КЛИЕНТОВ'
-                                    description='по нашей бонусной программе'
+                                    description='По нашей бонусной программе'
                                     image={<BiSolidDiscount size={80}/>}
                                 />                            
                             </div>
@@ -150,7 +168,6 @@ const Main = () => {
                     <h3 style={{textAlign:'center'}}>Заказать консультацию</h3>
                     <form className='form' onSubmit={(e) => { e.preventDefault(); sendMessage(); }}>
                         <div className="form__input">
-                            
                             <input
                             onChange={(e) => setPhone(e.target.value)}
                             value={phone}
@@ -173,6 +190,13 @@ const Main = () => {
                             type="text" 
                             className='form__input_name'
                             placeholder='Ваша фамилия:'
+                            />
+
+                            <input 
+                                type="file" 
+                                onChange={handleFileChange}
+                                accept='.pdf,.png,.jpg,.docx'
+                                className='form__input_file'
                             />
                         </div>
                         <div className='form__agree'>
