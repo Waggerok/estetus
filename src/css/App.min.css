@@ -556,6 +556,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 10px;
+  cursor: pointer;
 }
 .price__table-name {
   padding: 10px 20px;
@@ -565,14 +566,12 @@ body {
   transition: 0.5s all;
   padding: 10px 10px;
   font-weight: 700;
-  cursor: pointer;
 }
 .price__table-button-active {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
   font-weight: 700;
   padding: 10px 10px;
-  cursor: pointer;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
