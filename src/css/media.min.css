@@ -55,6 +55,9 @@
   .examples .imageItem {
     height: 400px;
   }
+  .services__variants {
+    gap: 75px;
+  }
   .services__variants_item {
     width: 250px;
   }
@@ -146,9 +149,9 @@
     gap: 0;
   }
   .services__variants_item {
-    scale: 1.05;
+    scale: 1.2;
     margin-top: 10px;
-    width: 180px;
+    width: 200px;
     height: 350px;
     pointer-events: none;
   }
@@ -204,6 +207,7 @@
     font-size: 14px;
   }
   .services__variants {
+    gap: 20px;
     margin-top: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -218,6 +222,7 @@
         align-content: center;
   }
   .services__variants_item {
+    scale: 1.05;
     width: 250px;
     height: 250px;
     margin-top: 20px;

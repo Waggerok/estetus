@@ -43,20 +43,7 @@ const Services = () => {
                             <ul>
                                 <li>Безметалловые коронки на ZrO2 и E.max</li>
                                 <li>Временные пластмассовые коронки и сплинты</li>
-                                <li>Телескопические коронки</li>
                                 <li>Металлокерамические коронки</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="services__variants_item" id='variant-item_2'>
-                        <div className="services__variants_item-title">
-                            Протезы
-                        </div>
-                        <div className="services__variants_item-list">
-                            <ul>
-                                <li>Бюгельное протезирование</li>
-                                <li>Нейлоновое протезирование</li>
-                                <li>Съемное протезирование</li>
                             </ul>
                         </div>
                     </div>

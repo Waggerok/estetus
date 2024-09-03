@@ -485,9 +485,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 100px;
 }
 .services__variants_item {
   width: 350px;
@@ -526,10 +527,6 @@ body {
 
 #variant-item_1 {
   background: url(../img/Koronki.png) center center/cover no-repeat;
-}
-
-#variant-item_2 {
-  background: url(../img/Implants.png) center center/cover no-repeat;
 }
 
 #variant-item_3 {
