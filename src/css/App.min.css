@@ -646,6 +646,11 @@ body {
   transition: 0.5s all;
   color: red;
 }
+.subtable__price-economy:active {
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  scale: 0.9;
+}
 .subtable__price-premium {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -660,6 +665,11 @@ body {
   transition: 0.5s all;
   color: red;
 }
+.subtable__price-premium:active {
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  scale: 0.9;
+}
 .subtable__price-onePrice {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -673,4 +683,9 @@ body {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
   color: red;
+}
+.subtable__price-onePrice:active {
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  scale: 0.9;
 }/*# sourceMappingURL=App.min.css.map */
