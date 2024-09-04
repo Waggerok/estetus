@@ -450,15 +450,12 @@ body {
 }
 .examples__carousel {
   margin-top: 20px;
-  width: 100%;
+  width: 900px;
   padding-bottom: 20px;
 }
 .examples__carousel img {
   width: 100%;
   height: 100%;
-}
-.examples .imageItem {
-  height: 700px;
 }
 
 .services {
