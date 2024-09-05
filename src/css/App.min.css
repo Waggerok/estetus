@@ -594,6 +594,15 @@ body {
 .price__total-refresh {
   margin-top: 20px;
 }
+.price__total-orders {
+  margin-top: 20px;
+}
+.price__total-orders ul {
+  list-style: none;
+}
+.price__total-orders ul li {
+  margin-top: 5px;
+}
 
 .subtable {
   background-color: rgba(255, 196, 133, 0.8549019608);

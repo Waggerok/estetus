@@ -4,17 +4,17 @@ const TableTwoPrice = ({ items, updateTotalPrice }) => {
     return (
         <>
             {
-                items.map((item) =>
-                    <div className="subtable">
+                items.map((item, index) =>
+                    <div key={index} className="subtable">
                         <div className="subtable__title">
                             {`${item.id}. `}
                             <span>{item.title}</span>
                         </div>
                         <div className="subtable__price">
-                            <div className="subtable__price-economy" onClick={() => updateTotalPrice(item.priceEconomy)}>
+                            <div className="subtable__price-economy" onClick={() => updateTotalPrice(item)}>
                                 {`${item.priceEconomy} руб. \u00A0 `}
                             </div>
-                            <div className="subtable__price-premium" onClick={() => updateTotalPrice(item.pricePremium)}>
+                            <div className="subtable__price-premium" onClick={() => updateTotalPrice(item)}>
                                 {`${item.pricePremium} руб.`}
                             </div>
                         </div>

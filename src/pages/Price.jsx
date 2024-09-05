@@ -18,7 +18,7 @@ import Thermoplastics from '../ServicesFolder/Service10';
 import Melodient from '../ServicesFolder/Service11';
 
 const Price = () => {
-    
+
     const [table, setTable] = useState({
         zro2: false,
         emax: false,
@@ -56,9 +56,16 @@ const Price = () => {
 
     const [totalPrice, setTotalPrice] = useState(0);
 
-    const updateTotalPrice = (costToAdd) =>  {
-        setTotalPrice(prevCost => prevCost + costToAdd)
+    let [order, setOrder] = useState([]);
+
+    const updateTotalPrice = (itemToAdd) =>  {
+        setTotalPrice(prevCost => prevCost + itemToAdd.price);
+        setOrder(prevOrder => {
+            const newOrder = [...prevOrder, `${itemToAdd.title} - ${itemToAdd.price} руб.`];
+            return newOrder;
+        });
     };
+    
     
     return (
         <div className='App'>
@@ -73,14 +80,32 @@ const Price = () => {
                 <AllTables tableState={table} switchTable={switchTable} updateTotalPrice={updateTotalPrice} services={services}/>
 
                 <div className="price__total">
-                    <div className="price__total-title">Общая стоимость всех услуг: {`${totalPrice} руб.`}</div>
-                    <div className="price__total-refresh" onClick={() => setTotalPrice(0)}>
+                    <div className="price__total-title">
+                        Общая стоимость всех услуг: {`${totalPrice} руб.`}
+                    </div>
+
+                    <div className="price__total-orders">
+                        {order.length > 0 ? (
+                            <ul>
+                                {order.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
+                        ) : (
+                         <p>Вы пока ничего не добавили</p>
+                        )}
+                    </div>
+
+                    <div className="price__total-refresh" onClick={() => {
+                        setTotalPrice(0)
+                        setOrder([]);
+                    }}>
                         <Button name='Сбросить цену'/>
                     </div>
-                </div>
-            </section>
 
-            
+                    
+                </div>
+            </section>            
         </div>
     )
 };
