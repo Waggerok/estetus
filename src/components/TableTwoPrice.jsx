@@ -11,10 +11,10 @@ const TableTwoPrice = ({ items, updateTotalPrice }) => {
                             <span>{item.title}</span>
                         </div>
                         <div className="subtable__price">
-                            <div className="subtable__price-economy" onClick={() => updateTotalPrice(item)}>
-                                {`${item.priceEconomy} руб. \u00A0 `}
+                            <div className="subtable__price-economy" onClick={() => updateTotalPrice(item, 'economy')}>
+                                {`${item.price} руб. \u00A0 `}
                             </div>
-                            <div className="subtable__price-premium" onClick={() => updateTotalPrice(item)}>
+                            <div className="subtable__price-premium" onClick={() => updateTotalPrice(item, 'premium')}>
                                 {`${item.pricePremium} руб.`}
                             </div>
                         </div>

@@ -56,12 +56,21 @@ const Price = () => {
 
     const [totalPrice, setTotalPrice] = useState(0);
 
-    let [order, setOrder] = useState([]);
+    const [order, setOrder] = useState([]);
 
-    const updateTotalPrice = (itemToAdd) =>  {
-        setTotalPrice(prevCost => prevCost + itemToAdd.price);
+    const updateTotalPrice = (itemToAdd, priceType) =>  {
+
+        const priceToUse = priceType === 'premium' 
+        ? itemToAdd.pricePremium
+        : itemToAdd.price;
+
+        const itemLabel = priceType === 'premium' 
+            ? `${itemToAdd.title} - ${priceToUse} руб. (премиум)` 
+            : `${itemToAdd.title} - ${priceToUse} руб.`;
+
+        setTotalPrice(prevCost => prevCost + priceToUse);
         setOrder(prevOrder => {
-            const newOrder = [...prevOrder, `${itemToAdd.title} - ${itemToAdd.price} руб.`];
+            const newOrder = [...prevOrder, `${itemToAdd.title} - ${itemLabel}`];
             return newOrder;
         });
     };
