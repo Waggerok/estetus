@@ -60,6 +60,7 @@ const Price = () => {
 
     const updateTotalPrice = (itemToAdd, priceType) =>  {
 
+
         const priceToUse = priceType === 'premium' 
         ? itemToAdd.pricePremium
         : itemToAdd.price;
@@ -67,6 +68,7 @@ const Price = () => {
         const itemLabel = priceType === 'premium' 
             ? `${itemToAdd.title} - ${priceToUse} руб. (премиум)` 
             : `${itemToAdd.title} - ${priceToUse} руб.`;
+
 
         setTotalPrice(prevCost => prevCost + priceToUse);
         setOrder(prevOrder => {
@@ -97,7 +99,7 @@ const Price = () => {
                         {order.length > 0 ? (
                             <ul>
                                 {order.map((item, index) => (
-                                    <li key={index}>{item}</li>
+                                    <li key={index}>{`${index+1}. `}{item}</li>
                                 ))}
                             </ul>
                         ) : (
