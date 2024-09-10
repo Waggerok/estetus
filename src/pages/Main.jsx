@@ -13,6 +13,15 @@ import { BiSolidDiscount } from 'react-icons/bi';
 import Laboratory from '../img/Laboratory.jpg';
 import MyModal from '../components/UI/MyModal/MyModal';
 
+//Logos
+import arum from '../img/logos/arum-logo.png';
+import shape from '../img/logos/3shape-logo.png';
+import dekema from '../img/logos/dekema-logo.png';
+import geomedi from '../img/logos/geomedi-logo.png';
+import ivoclar from '../img/logos/ivoclar-logo.png';
+import kurray from '../img/logos/kurray-logo.png';
+import shick from '../img/logos/schick-logo.png';
+
 const Main = () => {
 
     const [modal, setModal] = useState(false);
@@ -105,7 +114,7 @@ const Main = () => {
                 <div className="background__content">
                     <div className="background__content_start">
                         <div className="background__content_start-title">
-                            Цифровая зуботехническая лаборатория <span>EstetusLab</span>
+                            <h1>Цифровая зуботехническая лаборатория <span>EstetusLab</span></h1>
                         </div>
                         <div className="background__content_advantages">
                             <div className="background__content_advantages-text">
@@ -159,6 +168,36 @@ const Main = () => {
                                     Мы гарантируем индивидуальный подход к каждому клиенту, быструю обработку заказов и превосходное качество изделий.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                </section>
+                <section className='partners'>
+                    <div className="partners__title">
+                        Наши партнёры
+                    </div>
+                    <div className="partners__logos">
+                        <div className="partners__logos-item">
+                            <img src={shape} alt="shape"/>
+                        </div>
+                        <div className="partners__logos-item">
+                            <img src={arum} alt="arum" />
+                        </div>
+                        <div className="partners__logos-item">
+                        <img src={kurray} alt="kurray" />
+                        </div>
+                    </div>
+                    <div className="partners__logos">
+                    <div className="partners__logos-item">
+                            <img src={geomedi} alt="geomedi" />
+                        </div>
+                        <div className="partners__logos-item">
+                            <img src={ivoclar} alt="ivoclar" />
+                        </div>
+                        <div className="partners__logos-item">
+                            <img src={dekema} alt="dekema" />
+                        </div>
+                        <div className="partners__logos-item">
+                            <img src={shick} alt="shick" />
                         </div>
                     </div>
                 </section>
