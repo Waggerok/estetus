@@ -55,9 +55,6 @@
   .examples__description {
     font-size: 18px;
   }
-  .examples__model {
-    width: 768px;
-  }
   .imageItem {
     height: 500px;
   }
@@ -206,9 +203,6 @@
   }
   .subtable__title {
     width: 300px;
-  }
-  .examples__model {
-    width: 600px;
   }
   .examples__description {
     font-size: 16px;

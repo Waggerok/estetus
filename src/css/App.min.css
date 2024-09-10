@@ -474,7 +474,7 @@ body {
   cursor: -webkit-grab;
   cursor: grab;
   margin-top: 20px;
-  width: 800px;
+  width: 80%;
   height: 80vh;
   border-radius: 25px;
   -webkit-transition: 0.5s all;
