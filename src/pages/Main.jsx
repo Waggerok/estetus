@@ -171,36 +171,6 @@ const Main = () => {
                         </div>
                     </div>
                 </section>
-                <section className='partners'>
-                    <div className="partners__title">
-                        Наши партнёры
-                    </div>
-                    <div className="partners__logos">
-                        <div className="partners__logos-item">
-                            <img src={shape} alt="shape"/>
-                        </div>
-                        <div className="partners__logos-item">
-                            <img src={arum} alt="arum" />
-                        </div>
-                        <div className="partners__logos-item">
-                        <img src={kurray} alt="kurray" />
-                        </div>
-                    </div>
-                    <div className="partners__logos">
-                    <div className="partners__logos-item">
-                            <img src={geomedi} alt="geomedi" />
-                        </div>
-                        <div className="partners__logos-item">
-                            <img src={ivoclar} alt="ivoclar" />
-                        </div>
-                        <div className="partners__logos-item">
-                            <img src={dekema} alt="dekema" />
-                        </div>
-                        <div className="partners__logos-item">
-                            <img src={shick} alt="shick" />
-                        </div>
-                    </div>
-                </section>
 
                 {/* тут модалка */}
                 <MyModal 
@@ -250,6 +220,36 @@ const Main = () => {
                     </form>
                 </MyModal>
             </div>
+            <section className='partners'>
+                    <div className="partners__title">
+                        <span>Наши партнеры</span>
+                    </div>
+                    <div className="partners__logos">
+                        <div className="partners__logos-item">
+                            <img src={shape} alt="shape"/>
+                        </div>
+                        <div className="partners__logos-item">
+                            <img src={arum} alt="arum" />
+                        </div>
+                        <div className="partners__logos-item">
+                        <img src={kurray} alt="kurray" />
+                        </div>
+                    </div>
+                    <div className="partners__logos">
+                    <div className="partners__logos-item">
+                            <img src={geomedi} alt="geomedi" />
+                        </div>
+                        <div className="partners__logos-item">
+                            <img src={ivoclar} alt="ivoclar" />
+                        </div>
+                        <div className="partners__logos-item">
+                            <img src={dekema} alt="dekema" />
+                        </div>
+                        <div className="partners__logos-item">
+                            <img src={shick} alt="shick" />
+                        </div>
+                    </div>
+                </section>
         </>
     )
 };

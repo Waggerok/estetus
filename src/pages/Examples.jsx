@@ -25,14 +25,17 @@ const Examples = () => {
                             <Model/>
                         </Canvas>
                     </div>
-                    <div className="examples__title">
+                    <div className="examples__title" id='photo__title'>
                         Фотографии наших работ
-                    </div>
-                    <div className="examples__carousel">
-                        <Carouselka/>
                     </div>
                 </section>
             </div>
+            <section className='carousel'>
+                <div className="carousel__item">
+                    <Carouselka/>
+                </div>
+            </section>
+            
         </>
     )
 };

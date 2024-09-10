@@ -357,17 +357,24 @@ body {
 
 .partners {
   margin-top: 50px;
-  background-color: #c2c2c2;
+  background-color: #e1e0e0;
   border: 1px solid #c2c2c2;
   border-radius: 25px;
   -webkit-box-shadow: 1px 1px 10px #9f9f9f;
           box-shadow: 1px 1px 10px #9f9f9f;
-  margin-bottom: 50px;
+  width: 100%;
 }
 .partners__title {
   margin-top: 30px;
   text-align: center;
+  padding-bottom: 50px;
+}
+.partners__title span {
+  font-weight: 700;
   font-size: 40px;
+  color: black;
+  border-radius: 14px;
+  padding: 10px 15px;
 }
 .partners__logos {
   padding-bottom: 100px;
@@ -453,7 +460,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 50px;
 }
 .examples__title {
   font-size: 36px;
@@ -484,12 +490,16 @@ body {
   -webkit-box-shadow: 0.5px 0.5px 10px #c0c0c0;
           box-shadow: 0.5px 0.5px 10px #c0c0c0;
 }
-.examples__carousel {
+
+.carousel {
+  width: 100%;
   margin-top: 20px;
-  width: 900px;
-  padding-bottom: 20px;
 }
-.examples__carousel img {
+
+.imageItem {
+  height: 700px;
+}
+.imageItem img {
   width: 100%;
   height: 100%;
 }
