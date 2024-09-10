@@ -5,14 +5,6 @@ import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 //Examples
-import example1 from '../img/examples__photo/example1.png';
-import example2 from '../img/examples__photo/example2.png';
-import example3 from '../img/examples__photo/example3.png';
-import example4 from '../img/examples__photo/example4.png';
-import example5 from '../img/examples__photo/example5.png';
-import example6 from '../img/examples__photo/example6.png';
-import example7 from '../img/examples__photo/example7.png';
-
 import exmpl1 from '../img/examples__photo/exmpl1.png';
 import exmpl2 from '../img/examples__photo/exmpl2.png';
 import exmpl3 from '../img/examples__photo/exmpl3.png';
