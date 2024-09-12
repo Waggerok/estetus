@@ -251,6 +251,18 @@
   .services__variants_item-list ul li {
     font-size: 12px;
   }
+  .services__work_title {
+    font-size: 26px;
+  }
+  .services__work_list ol li {
+    font-size: 14px;
+  }
+  .services__work_list ol li a {
+    font-size: 14px;
+  }
+  .services__work_list ol li span {
+    font-size: 14px;
+  }
   .contacts__title {
     font-size: 22px;
   }

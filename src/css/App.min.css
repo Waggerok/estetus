@@ -562,6 +562,24 @@ body {
   padding: 10px 0;
   font-size: 18px;
 }
+.services__work {
+  margin-top: 30px;
+}
+.services__work_title {
+  text-align: center;
+  font-size: 36px;
+}
+.services__work_list ol li {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.services__work_list ol li a {
+  text-decoration: none;
+  color: #f3b703;
+}
+.services__work_list ol li span {
+  color: #f3b703;
+}
 
 #variant-item_1 {
   background: url(../img/Koronki.png) center center/cover no-repeat;

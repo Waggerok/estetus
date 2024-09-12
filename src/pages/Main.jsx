@@ -19,7 +19,7 @@ import shape from '../img/logos/3shape-logo.png';
 import dekema from '../img/logos/dekema-logo.png';
 import geomedi from '../img/logos/geomedi-logo.png';
 import ivoclar from '../img/logos/ivoclar-logo.png';
-import kurray from '../img/logos/kurray-logo.png';
+import kuraray from '../img/logos/kurray-logo.png';
 import shick from '../img/logos/schick-logo.png';
 
 const Main = () => {
@@ -226,27 +226,41 @@ const Main = () => {
                     </div>
                     <div className="partners__logos">
                         <div className="partners__logos-item">
-                            <img src={shape} alt="shape"/>
+                            <a href="https://www.3shape.com">
+                                <img src={shape} alt="shape"/>
+                            </a>
                         </div>
                         <div className="partners__logos-item">
-                            <img src={arum} alt="arum" />
+                            <a href="https://arumdental.com">
+                                <img src={arum} alt="arum" />
+                            </a>
                         </div>
                         <div className="partners__logos-item">
-                        <img src={kurray} alt="kurray" />
+                            <a href="https://www.kuraraynoritake.com/katana/ru/">
+                            <img src={kuraray} alt="kuraray" />
+                            </a>
                         </div>
                     </div>
                     <div className="partners__logos">
-                    <div className="partners__logos-item">
-                            <img src={geomedi} alt="geomedi" />
+                        <div className="partners__logos-item">
+                            <a href="https://geomedi.ru">
+                                <img src={geomedi} alt="geomedi" />
+                            </a>
                         </div>
                         <div className="partners__logos-item">
-                            <img src={ivoclar} alt="ivoclar" />
+                            <a href="https://www.ivoclar.com">
+                                <img src={ivoclar} alt="ivoclar" />
+                            </a>
                         </div>
                         <div className="partners__logos-item">
-                            <img src={dekema} alt="dekema" />
+                            <a href="https://www.dekema.com/ru/">
+                                <img src={dekema} alt="dekema" />
+                            </a>
                         </div>
                         <div className="partners__logos-item">
-                            <img src={shick} alt="shick" />
+                            <a href="https://www.schick-dental.de/en/unternehmen.m">
+                                <img src={shick} alt="shick" />
+                            </a>
                         </div>
                     </div>
                 </section>

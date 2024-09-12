@@ -55,8 +55,7 @@ const Contacts = () => {
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>                
                 </div>
             </div>
         </div>
