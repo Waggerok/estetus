@@ -401,6 +401,11 @@ body {
   scale: 1.2;
 }
 
+#dekema {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
 .contacts {
   padding-bottom: 50px;
 }

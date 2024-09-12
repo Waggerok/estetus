@@ -207,7 +207,7 @@ const Main = () => {
                             <input 
                                 type="file" 
                                 onChange={handleFileChange}
-                                accept='.pdf,.png,.jpg,.docx'
+                                accept='.stl'
                                 className='form__input_file'
                             />
                         </div>
@@ -252,9 +252,9 @@ const Main = () => {
                                 <img src={ivoclar} alt="ivoclar" />
                             </a>
                         </div>
-                        <div className="partners__logos-item">
+                        <div className="partners__logos-item" id='dekema'>
                             <a href="https://www.dekema.com/ru/">
-                                <img src={dekema} alt="dekema" />
+                                <img src={dekema} alt="dekema"/>
                             </a>
                         </div>
                         <div className="partners__logos-item">

@@ -17,6 +17,9 @@
   .partners__logos-item {
     width: 200px;
   }
+  #dekema {
+    width: 180px;
+  }
 }
 @media (max-width: 991px) {
   .App {
@@ -48,6 +51,10 @@
   }
   .partners__logos-item {
     width: 150px;
+  }
+  #dekema {
+    width: 130px;
+    margin-bottom: 30px;
   }
   .examples__title {
     font-size: 30px;
@@ -165,6 +172,10 @@
   }
   .partners__logos-item {
     width: 200px;
+  }
+  #dekema {
+    width: 180px;
+    margin-bottom: 0;
   }
   .services__variants_item {
     scale: 1.2;
